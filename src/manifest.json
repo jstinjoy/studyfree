@@ -1,0 +1,17 @@
+{
+	"manifest_version": 3,
+	"name": "Studyfree",
+	"version": "1.0.0",
+	"author": "joy",
+	"permissions": ["webRequest"],
+	"host_permissions": ["*://*.studydrive.net/"],
+	"content_scripts": [
+	  {
+		"js": ["content/studydrive.js"],
+		"matches": ["https://www.studydrive.net/*/doc/*"]
+	  }
+	],
+	"background": {
+	  "service_worker": "background.js"
+	}
+  }
