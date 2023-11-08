@@ -2,9 +2,12 @@
 	"manifest_version": 3,
 	"name": "Studyfree",
 	"version": "1.0.0",
-	"author": "joy",
+	"author": "jstinjoy",
+	"icons": {
+		"128": "assets/img/logo128.png"
+	},
 	"permissions": ["webRequest"],
-	"host_permissions": ["*://*.studydrive.net/"],
+	"host_permissions": ["https://cdn.studydrive.net/"],
 	"content_scripts": [
 	  {
 		"js": ["content/studydrive.js"],

@@ -5,7 +5,7 @@ chrome.webRequest.onCompleted.addListener(
     url = details.url;
   },
   {
-    urls: ['*://*.studydrive.net/d/prod/documents/*'],
+    urls: ['https://cdn.studydrive.net/d/prod/documents/*'],
   },
 );
 
